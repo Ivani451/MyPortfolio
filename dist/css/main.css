@@ -13,7 +13,8 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .sidenav #logo {
     text-align: center;
-    padding: 0 0 1em 0; }
+    padding: 0 0 1em 0;
+    border-bottom: 1px solid #d4d4d4; }
   .sidenav a {
     padding: 1em 1em 1em 2em;
     text-decoration: none;
@@ -26,6 +27,16 @@ body {
 .main {
   margin-left: 200px;
   /* Same as the width of the sidenav */ }
+  .main #about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .main #about img {
+      justify-content: flex-start; }
+    .main #about #about_me {
+      padding: 1em; }
+      .main #about #about_me h3 {
+        text-align: center; }
 
 @media screen and (max-height: 600px) {
   .sidenav {
