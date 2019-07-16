@@ -37,6 +37,28 @@ body {
       padding: 1em; }
       .main #about #about_me h3 {
         text-align: center; }
+  .main #skills {
+    background-color: #2f996d;
+    font-size: 3em;
+    color: #ebebeb; }
+    .main #skills span {
+      margin-left: 1em; }
+
+.skills_card {
+  border: 1px solid black;
+  padding: 0em 2em 2em 2em;
+  margin: 2em;
+  box-shadow: 3px 3px 10px #888888; }
+  .skills_card h3 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
+    font-size: 2em; }
+  .skills_card .logos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em; }
+    .skills_card .logos img {
+      height: 8%;
+      width: 8%; }
 
 @media screen and (max-height: 600px) {
   .sidenav {
