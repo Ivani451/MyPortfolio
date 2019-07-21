@@ -22,27 +22,25 @@ body {
     color: #686868;
     display: block; }
   .sidenav a:hover {
-    color: #4322d4; }
+    color: #2f996d; }
 
 .main {
   margin-left: 200px;
   /* Same as the width of the sidenav */ }
-  .main #about {
+  .main #header_pic {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly; }
-    .main #about img {
-      justify-content: flex-start; }
-    .main #about #about_me {
-      padding: 1em; }
-      .main #about #about_me h3 {
-        text-align: center; }
-  .main #section_title {
+  .main .section_title {
     background-color: #2f996d;
     font-size: 3em;
     color: #ebebeb; }
-    .main #section_title span {
+    .main .section_title span {
       margin-left: 1em; }
+  .main #about_me {
+    padding: 1em 2em 1em 2em; }
+    .main #about_me h3 {
+      text-align: center; }
   .main .skills_card {
     border: 1px solid black;
     padding: 0em 2em 2em 2em;
@@ -69,6 +67,12 @@ body {
       box-shadow: 3px 3px 10px #888888; }
       .main #projects .projects_card img {
         width: 100%; }
+  .main #education {
+    padding: 1em 2em 1em 2em; }
+    .main #education h3 {
+      text-align: center; }
+  .main #contact {
+    padding: 2em; }
 
 @media screen and (max-height: 600px) {
   .sidenav {
