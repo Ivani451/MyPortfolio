@@ -67,16 +67,24 @@ body {
     h3 {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
       font-size: 2em;
+      color: rgb(95, 95, 95);
     }
 
     .logos {
       display: flex;
-      justify-content: space-around;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
       margin-top: 1em;
 
       img {
-        height: 8%;
-        width: 8%;
+        height: 3em;
+        width: 3em;
+      }
+
+      h4 {
+        justify-content: center;
+        font-size: 80%;
       }
     }
   }
@@ -111,11 +119,11 @@ body {
   }
 }
 
-@media screen and (max-height: 600px) {
-  .sidenav {
-    padding-top: 15px;
-    a {
-      font-size: 18px;
-    }
-  }
-}
+// @media screen and (max-height: 600px) {
+//   .sidenav {
+//     padding-top: 15px;
+//     a {
+//       font-size: 18px;
+//     }
+//   }
+// }
