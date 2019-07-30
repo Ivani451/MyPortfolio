@@ -1,11 +1,27 @@
+html,
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 100%; }
 
 #hamburger_icon .hamburger_line {
   width: 35px;
   height: 5px;
   background-color: #2f996d;
   margin: 6px 0; }
+
+.main-nav {
+  height: 48px;
+  background-color: white;
+  border-bottom: 1px solid grey; }
+
+.menu {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .menu li {
+    display: inline-block; }
 
 .side_nav_large_screen {
   height: 100%;
@@ -38,7 +54,7 @@ body {
   top: 0;
   left: 0; }
   .top_nav_medium_screen #logo {
-    padding: 0 1em 0 1em;
+    padding: 0 0.8em 0 0.8em;
     border: 2px solid #2f996d;
     height: 100%; }
   .top_nav_medium_screen .main_header {
@@ -49,7 +65,8 @@ body {
     text-decoration: none;
     font-size: 1em;
     color: #686868;
-    display: inline-block; }
+    display: inline-block;
+    overflow: hidden; }
   .top_nav_medium_screen a:hover {
     color: #2f996d; }
 
@@ -112,6 +129,8 @@ body {
 
 @media screen and (min-width: 801px) {
   .top_nav_medium_screen {
+    display: none; }
+  .main-nav {
     display: none; } }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -119,6 +138,8 @@ body {
     display: none; }
   .main {
     margin: 0; }
+  .main-nav {
+    display: none; }
   .top_nav_medium_screen {
     margin: 0; }
   #hamburger_icon {

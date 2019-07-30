@@ -1,5 +1,8 @@
+html,
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 100%;
 }
 
 #hamburger_icon {
@@ -8,6 +11,23 @@ body {
     height: 5px;
     background-color: rgb(47, 153, 109);
     margin: 6px 0;
+  }
+}
+
+.main-nav {
+  height: 48px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+}
+
+.menu {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
   }
 }
 
@@ -50,7 +70,7 @@ body {
   left: 0;
 
   #logo {
-    padding: 0 1em 0 1em;
+    padding: 0 0.8em 0 0.8em;
     border: 2px solid rgb(47, 153, 109);
     height: 100%;
   }
@@ -66,6 +86,7 @@ body {
     font-size: 1em;
     color: #686868;
     display: inline-block;
+    overflow: hidden;
   }
 
   a:hover {
@@ -165,6 +186,10 @@ body {
   .top_nav_medium_screen {
     display: none;
   }
+
+  .main-nav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -173,6 +198,10 @@ body {
   }
   .main {
     margin: 0;
+  }
+
+  .main-nav {
+    display: none;
   }
 
   .top_nav_medium_screen {
