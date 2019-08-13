@@ -122,12 +122,27 @@ body {
       box-shadow: 3px 3px 10px #888888; }
       .main #projects .projects_card img {
         width: 100%; }
-  .main #education {
-    padding: 1em 2em 1em 2em; }
-    .main #education h3 {
-      text-align: center; }
-  .main #contact {
-    padding: 2em; }
+  .main #education_format {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .main #education_format .education_card {
+      border: 1px solid black;
+      padding: 0em 2em 2em 2em;
+      margin: 2em;
+      box-shadow: 3px 3px 10px #888888; }
+      .main #education_format .education_card h3 {
+        margin: 1em 0 0 0;
+        color: #2f996d;
+        border-bottom: 1.5px solid rgba(47, 153, 109, 0);
+        -webkit-transition: border 500ms ease;
+        -moz-transition: border 500ms ease;
+        -ms-transition: border 500ms ease;
+        -o-transition: border 500ms ease;
+        transition: border 500ms ease; }
+      .main #education_format .education_card h3:hover {
+        border-bottom: 1.5px solid #2f996d; }
 
 @media screen and (min-width: 801px) {
   .top_nav_medium_screen {

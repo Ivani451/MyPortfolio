@@ -171,16 +171,34 @@ body {
     }
   }
 
-  #education {
-    padding: 1em 2em 1em 2em;
+  // education_format created to format the education cards
+  #education_format {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .education_card {
+      border: 1px solid black;
+      padding: 0em 2em 2em 2em;
+      margin: 2em;
+      box-shadow: 3px 3px 10px #888888;
 
-    h3 {
-      text-align: center;
+      h3 {
+        margin: 1em 0 0 0;
+        color: rgb(47, 153, 109);
+        border-bottom: 1.5px solid rgba(47, 153, 109, 0);
+
+        -webkit-transition: border 500ms ease;
+        -moz-transition: border 500ms ease;
+        -ms-transition: border 500ms ease;
+        -o-transition: border 500ms ease;
+        transition: border 500ms ease;
+      }
+
+      h3:hover {
+        border-bottom: 1.5px solid rgba(47, 153, 109, 1);
+      }
     }
-  }
-
-  #contact {
-    padding: 2em;
   }
 }
 
