@@ -213,6 +213,22 @@ body {
       }
     }
   }
+
+  // footer credits artists for the use of their icons
+  footer {
+    margin: 10em 0 0 1em;
+    display: flex;
+
+    div {
+      color: grey;
+      font-size: 0.6em;
+      opacity: 0.5;
+      a {
+        text-decoration: none;
+        color: grey;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 801px) {

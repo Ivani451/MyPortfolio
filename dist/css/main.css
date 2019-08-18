@@ -150,6 +150,16 @@ body {
           color: #2f996d; }
       .main #education_format .education_card h3:hover {
         border-bottom: 1.5px solid #2f996d; }
+  .main footer {
+    margin: 10em 0 0 1em;
+    display: flex; }
+    .main footer div {
+      color: grey;
+      font-size: 0.6em;
+      opacity: 0.5; }
+      .main footer div a {
+        text-decoration: none;
+        color: grey; }
 
 @media screen and (min-width: 801px) {
   .top_nav_medium_screen {
