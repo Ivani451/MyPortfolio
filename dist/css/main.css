@@ -158,6 +158,17 @@ body {
           color: #2f996d; }
       .main #education_format .education_card h3:hover {
         border-bottom: 1.5px solid #2f996d; }
+  .main #contact_section {
+    margin-bottom: 15em; }
+    .main #contact_section ul {
+      list-style-type: none; }
+      .main #contact_section ul li {
+        margin: 3em; }
+        .main #contact_section ul li a {
+          margin-left: 1em;
+          text-decoration: none; }
+        .main #contact_section ul li a:hover {
+          border-bottom: 1.5px solid #2f996d; }
   .main footer {
     margin: 10em 0 0 1em;
     display: flex; }

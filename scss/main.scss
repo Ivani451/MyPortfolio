@@ -225,6 +225,27 @@ body {
     }
   }
 
+  #contact_section {
+    margin-bottom: 15em;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        margin: 3em;
+
+        a {
+          margin-left: 1em;
+          text-decoration: none;
+        }
+
+        a:hover {
+          border-bottom: 1.5px solid rgba(47, 153, 109, 1);
+        }
+      }
+    }
+  }
+
   // footer credits artists for the use of their icons
   footer {
     margin: 10em 0 0 1em;
