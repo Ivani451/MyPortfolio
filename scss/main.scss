@@ -271,6 +271,7 @@ body {
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    margin: 2em;
 
     .flip-card-inner {
       position: relative;
@@ -280,6 +281,14 @@ body {
       transition: transform 0.6s;
       transform-style: preserve-3d;
       box-shadow: 3px 3px 10px #888888;
+
+      span {
+        h3,
+        p,
+        hr {
+          backface-visibility: hidden;
+        }
+      }
     }
   }
 
@@ -297,6 +306,7 @@ body {
 
   .flip-card-front {
     color: black;
+
     img {
       width: 250px;
       height: 200px;
@@ -306,6 +316,14 @@ body {
   .flip-card-back {
     color: black;
     transform: rotateY(180deg);
+
+    #inner-description {
+      margin-bottom: 3em;
+
+      ul {
+        text-align: left;
+      }
+    }
   }
 }
 
