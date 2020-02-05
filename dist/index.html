@@ -6,22 +6,6 @@
   </head>
 
   <body>
-    <div id="hamburger_icon">
-      <div class="hamburger_line"></div>
-      <div class="hamburger_line"></div>
-      <div class="hamburger_line"></div>
-    </div>
-
-    <nav class="main-nav">
-      <ul class="menu">
-        <li><a href="#about_me_section">About</a></li>
-        <li><a href="#skills_section">Skills</a></li>
-        <li><a href="#projects_section">Projects</a></li>
-        <li><a href="#education_section">Education</a></li>
-        <li><a href="#contact_section">Contact</a></li>
-      </ul>
-    </nav>
-
     <div class="side_nav_large_screen">
       <div>
         <h2 id="logo">
@@ -56,25 +40,41 @@
       </div>
     </div>
 
-    <div class="top_nav_medium_screen">
-      <div class="main_header">
-        <h2 id="logo">
-          <span style="color: rgb(47, 153, 109); font-size: 1em">Ivani</span>
-          <br />
-          <span style="color: rgb(47, 153, 109); font-size: 1em">Aviles</span>
-        </h2>
+    <nav class="header-medium">
+      <header class="header">
+        <a href="/dist/index.html" id="header-logo-medium" class="logo">
+          <h2 id="logo">
+            <span style="color: rgb(47, 153, 109); font-size: 1em">Ivani</span>
+            <br />
+            <span style="color: rgb(47, 153, 109); font-size: 1em">Aviles</span>
+          </h2>
+        </a>
 
-        <a href="#about_me_section">About</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
 
-        <a href="#skills_section">Skills</a>
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
 
-        <a href="#projects_section">Projects</a>
-
-        <a href="#education_section">Education</a>
-
-        <a href="#contact_section">Contact</a>
-      </div>
-    </div>
+        <ul class="menu">
+          <li>
+            <a href="#about_me_section">About</a>
+          </li>
+          <li>
+            <a href="#skills_section">Skills</a>
+          </li>
+          <li>
+            <a href="#projects_section">Projects</a>
+          </li>
+          <li>
+            <a href="#education_section">Education</a>
+          </li>
+          <li>
+            <a href="#contact_section">Contact</a>
+          </li>
+        </ul>
+      </header>
+    </nav>
 
     <div class="main">
       <div id="header_pic">
@@ -176,15 +176,15 @@
         <h3 class="section_title"><span>Projects</span></h3>
 
         <div id="projects">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <span>
+          <div class="flip_card">
+            <div class="flip_card_inner">
+              <span class="card_description">
                 <h3 style="color: rgb(47, 153, 109);">Fridge List</h3>
-                <p>Nutrition search and recipe aggregator</p>
+                <p>Find recipes with the ingredients you have</p>
                 <hr />
               </span>
 
-              <div class="flip-card-front" style="background-color: white;">
+              <div class="flip_card_front" style="background-color: white;">
                 <div>
                   <div style="background-color: white;">
                     <img src="/logos/food.svg" alt="" /> <br />
@@ -192,7 +192,7 @@
                 </div>
               </div>
 
-              <div class="flip-card-back">
+              <div class="flip_card_back">
                 <div id="inner-description">
                   <h1>Accomplishments</h1>
                   <ul>
@@ -204,15 +204,15 @@
             </div>
           </div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <span>
+          <div class="flip_card">
+            <div class="flip_card_inner">
+              <span class="card_description">
                 <h3 style="color: rgb(47, 153, 109);">Cinemm</h3>
                 <p>Movie review aggregator</p>
                 <hr />
               </span>
 
-              <div class="flip-card-front" style="background-color: white;">
+              <div class="flip_card_front" style="background-color: white;">
                 <div>
                   <div style="background-color: white;">
                     <img src="/logos/film.svg" alt="" /> <br />
@@ -220,7 +220,7 @@
                 </div>
               </div>
 
-              <div class="flip-card-back">
+              <div class="flip_card_back">
                 <div id="inner-description">
                   <h1>Accomplishments</h1>
                   <ul>
@@ -232,15 +232,15 @@
             </div>
           </div>
 
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <span>
+          <div class="flip_card">
+            <div class="flip_card_inner">
+              <span class="card_description">
                 <h3 style="color: rgb(47, 153, 109);">Twitch Viewer</h3>
                 <p>Find twitch streamer info</p>
                 <hr />
               </span>
 
-              <div class="flip-card-front" style="background-color: white;">
+              <div class="flip_card_front" style="background-color: white;">
                 <div>
                   <div style="background-color: white;">
                     <img src="/logos/twitch.svg" alt="" /> <br />
@@ -248,7 +248,7 @@
                 </div>
               </div>
 
-              <div class="flip-card-back">
+              <div class="flip_card_back">
                 <div id="inner-description">
                   <h1>Accomplishments</h1>
                   <ul>
