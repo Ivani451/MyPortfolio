@@ -7,17 +7,23 @@
 
   <body>
     <div class="side_nav_large_screen">
-      <div>
-        <h2 id="logo">
-          <span style="color: rgb(47, 153, 109); font-size: 1.5em">Ivani</span>
-          <br />
-          <span style="color: rgb(47, 153, 109); font-size: 1.5em">Aviles</span>
-          <br />
-          <span style="color: #686868; font-size: .6em">
-            Full Stack Developer
-          </span>
-        </h2>
-      </div>
+      <a href="#top_main">
+        <div>
+          <h2 id="logo_large">
+            <span style="color: rgb(47, 153, 109); font-size: 1.5em;"
+              >Ivani</span
+            >
+            <br />
+            <span style="color: rgb(47, 153, 109); font-size: 1.5em;"
+              >Aviles</span
+            >
+            <br />
+            <span style="color: #686868; font-size: 0.6em;">
+              Full Stack Developer
+            </span>
+          </h2>
+        </div>
+      </a>
 
       <div>
         <a href="#about_me_section">About</a>
@@ -42,11 +48,13 @@
 
     <nav class="header-medium">
       <header class="header">
-        <a href="/dist/index.html" id="header-logo-medium" class="logo">
-          <h2 id="logo">
-            <span style="color: rgb(47, 153, 109); font-size: 1em">Ivani</span>
+        <a href="#top_main">
+          <h2 id="logo_medium">
+            <span style="color: rgb(47, 153, 109); font-size: 1em;">Ivani</span>
             <br />
-            <span style="color: rgb(47, 153, 109); font-size: 1em">Aviles</span>
+            <span style="color: rgb(47, 153, 109); font-size: 1em;"
+              >Aviles</span
+            >
           </h2>
         </a>
 
@@ -77,12 +85,20 @@
     </nav>
 
     <div class="main">
-      <div id="header_pic">
-        <img src="/logos/javascript.svg" alt="" height="50%" width="50%" />
+      <div id="top_main">
+        <h1>
+          Hello There. I am Ivani and I enjoy making websites, among other
+          things.
+        </h1>
       </div>
 
       <div id="about_me_section">
         <h3 class="section_title"><span>About Me</span></h3>
+
+        <div id="header_pic">
+          <img src="/logos/javascript.svg" alt="" height="50%" width="50%" />
+        </div>
+
         <div id="about_me">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -98,7 +114,7 @@
 
       <div id="skills_section">
         <h3 class="section_title"><span>Skills</span></h3>
-        <div class="skills_card">
+        <div class="skills_card_left">
           <h3>CSS</h3>
           <hr />
           <span class="logos">
@@ -121,7 +137,7 @@
           </span>
         </div>
 
-        <div class="skills_card">
+        <div class="skills_card_right">
           <h3>JavaScript</h3>
           <hr />
           <span class="logos">
@@ -144,7 +160,7 @@
           </span>
         </div>
 
-        <div class="skills_card">
+        <div class="skills_card_left">
           <h3>Back-end/Other</h3>
           <hr />
           <span class="logos">
@@ -175,7 +191,51 @@
       <div>
         <h3 class="section_title"><span>Projects</span></h3>
         <div id="projects">
-          <div class="flip_card">
+          <div class="card">
+            <div class="image">
+              <img
+                src="http://1.bp.blogspot.com/-EhPr4LXcywE/Udr594sPHTI/AAAAAAAAAJ4/Tv4y4CBLTPM/s400/Cristina-Otero-2.jpg"
+              />
+            </div>
+            <div class="details">
+              <div class="center">
+                <h1>Someone famous<br /><span>team leader</span></h1>
+                <p>
+                  Lorem ipsum is simple dummy text on the printing and
+                  typesetting industry.
+                </p>
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img
+                src="http://1.bp.blogspot.com/-EhPr4LXcywE/Udr594sPHTI/AAAAAAAAAJ4/Tv4y4CBLTPM/s400/Cristina-Otero-2.jpg"
+              />
+            </div>
+            <div class="details">
+              <div class="center">
+                <h1>Someone famous<br /><span>team leader</span></h1>
+                <p>
+                  Lorem ipsum is simple dummy text on the printing and
+                  typesetting industry.
+                </p>
+                <ul>
+                  <li>
+                    <a href="#"><p>this is a link</p></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="flip_card">
             <div class="flip_card_inner">
               <span class="card_description">
                 <h3 style="color: rgb(47, 153, 109);">Fridge List</h3>
@@ -256,7 +316,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div id="education_section">
@@ -270,7 +330,7 @@
                   <a href="https://stmarytx.edu">St. Mary's University</a>
                 </h3>
                 <br />
-                <span style="font-weight: bold">San Antonio, TX</span>
+                <span style="font-weight: bold;">San Antonio, TX</span>
                 <br />
                 <ul>
                   <li>B.S. in Biophysics</li>
@@ -288,7 +348,7 @@
                   >
                 </h3>
                 <br />
-                <span style="font-weight: bold">San Antonio, TX</span>
+                <span style="font-weight: bold;">San Antonio, TX</span>
                 <br />
                 <ul>
                   <li>
@@ -304,7 +364,7 @@
               <div>
                 <h3>Hall Council</h3>
                 <br />
-                <span style="font-weight: bold"
+                <span style="font-weight: bold;"
                   >President and Program Director</span
                 >
                 <br />
@@ -327,7 +387,7 @@
                   >
                 </h3>
                 <br />
-                <span style="font-weight: bold">Student Mentor</span>
+                <span style="font-weight: bold;">Student Mentor</span>
                 <br />
                 <ul>
                   <li>
@@ -349,7 +409,7 @@
                   alt=""
                   style="height: 30px; width: 30px;"
                 />
-                <a href="mailto:" style="color: rgb(47, 153, 109)"
+                <a href="mailto:" style="color: rgb(47, 153, 109);"
                   >ivaniaviles@gmail.com</a
                 >
               </li>
@@ -361,7 +421,7 @@
                 />
                 <a
                   href="https://github.com/Ivani451"
-                  style="color: rgb(47, 153, 109)"
+                  style="color: rgb(47, 153, 109);"
                   >github.com/ivani451</a
                 >
               </li>
@@ -373,7 +433,7 @@
                 />
                 <a
                   href="https://codepen.io/Ivani451"
-                  style="color: rgb(47, 153, 109)"
+                  style="color: rgb(47, 153, 109);"
                   >codepen.io/Ivani451</a
                 >
               </li>
