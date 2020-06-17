@@ -27,7 +27,8 @@ body {
   }
 
   a:hover {
-    color: rgb(47, 153, 109);
+    color: rgb(231, 44, 185);
+    font-weight: bold;
   }
 }
 
@@ -51,7 +52,7 @@ body {
     padding: 10px 20px;
     margin: 1em;
     float: left;
-    border: 2px solid rgb(47, 153, 109);
+    border: 2px solid rgb(231, 44, 185);
     font-size: 1.25em;
   }
 
@@ -76,6 +77,14 @@ body {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
+    a {
+      color: rgb(12, 146, 170);
+    }
+
+    a:hover {
+      color: rgb(231, 44, 185);
+      font-weight: bold;
+    }
   }
 
   .menu-icon {
@@ -88,7 +97,7 @@ body {
   }
 
   .menu-icon .navicon {
-    background: rgb(47, 153, 109);
+    background: rgb(12, 146, 170);
     display: block;
     height: 2px;
     position: relative;
@@ -98,7 +107,7 @@ body {
 
   .menu-icon .navicon:before,
   .menu-icon .navicon:after {
-    background: rgb(47, 153, 109);
+    background: rgb(12, 146, 170);
     content: "";
     display: block;
     height: 100%;
@@ -144,19 +153,6 @@ body {
 .main {
   margin-left: 200px; /* Same as the width of the sidenav */
 
-  #header_pic {
-    margin: auto;
-    width: 50%;
-    height: 50%;
-    animation-name: animation_drop;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    img {
-      border-radius: 50%;
-      box-shadow: 2px 2px 5px #888888;
-    }
-  }
-
   @keyframes animation_drop {
     from {
       top: -200px;
@@ -167,22 +163,39 @@ body {
   }
 
   .section_title {
-    background-color: rgb(47, 153, 109);
+    opacity: 50%;
     font-size: 3em;
     color: rgb(235, 235, 235);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     span {
       margin-left: 1em;
     }
   }
 
   #about_me_section {
-    margin: auto;
+    #header_pic {
+      margin-top: 9em;
+      position: relative;
+      left: 35%;
+      width: 50%;
+      height: 50%;
+      animation-name: animation_drop;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+      img {
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px #888888;
+      }
+    }
 
     #about_me {
       padding: 1em 2em 1em 2em;
 
-      h3 {
+      h1 {
         text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
     }
   }
@@ -250,39 +263,42 @@ body {
   }
 
   // education_format created to format the education cards
-  #education_format {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    .education_card {
-      border: 1px solid black;
-      padding: 0em 2em 2em 2em;
-      margin: 2em;
-      box-shadow: 3px 3px 10px #888888;
-      position: relative;
-      align-content: center;
 
-      a {
-        padding: 4em 1em 0em 3em;
-        text-decoration: none;
-        font-size: 1em;
-        color: #686868;
-        display: inline-block;
-      }
+  #education_section {
+    #education_format {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .education_card {
+        border: 1px solid black;
+        padding: 0em 2em 2em 2em;
+        margin: 2em;
+        box-shadow: 3px 3px 10px #888888;
+        position: relative;
+        align-content: center;
 
-      a:hover {
-        color: rgb(47, 153, 109);
-      }
+        a {
+          padding: 4em 1em 0em 3em;
+          text-decoration: none;
+          font-size: 1em;
+          color: rgb(12, 146, 170);
+          display: inline-block;
+        }
 
-      h3 {
-        border-bottom: 1px solid grey;
-        margin-top: -2em;
-        color: rgb(47, 153, 109);
-        text-decoration: none;
-      }
+        a:hover {
+          color: rgb(231, 44, 185);
+        }
 
-      li {
-        list-style-position: outside;
+        h3 {
+          border-bottom: 1px solid grey;
+          margin-top: -2em;
+          color: rgb(47, 153, 109);
+          text-decoration: none;
+        }
+
+        li {
+          list-style-position: outside;
+        }
       }
     }
   }
@@ -302,7 +318,7 @@ body {
         }
 
         a:hover {
-          border-bottom: 1.5px solid rgba(47, 153, 109, 1);
+          border-bottom: 1.5px solid rgb(231, 44, 185);
         }
       }
     }
@@ -326,16 +342,16 @@ body {
 
   // Styling related to the cards in the projects section
 
-  #projects {
+  #projects_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .card {
       transform: translate(-50%, -50%);
-      width: 360px;
-      height: 400px;
+      width: 250px;
+      height: 250px;
       background: #000;
-      margin: 15em 0em -5em 15em;
+      margin: 10em 0em -5em 15em;
 
       .image {
         overflow: hidden;
@@ -390,7 +406,7 @@ body {
     }
 
     .card .details .center ul li a:hover {
-      background: #ff3636;
+      background: rgb(231, 44, 185);
     }
   }
 }
@@ -409,9 +425,31 @@ body {
 
   .main {
     margin: 0;
+
+    #about_me_section {
+      margin-top: 10em;
+
+      h1 {
+        font-size: 1.5em;
+      }
+    }
   }
 
-  #top_main {
-    margin: 10em 2em 2em 2em;
+  #header_pic {
+    position: relative;
+    left: 15%;
+    margin-top: 10em;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
