@@ -175,23 +175,24 @@ body {
   }
 
   #about_me_section {
+    height: 80vh;
     #header_pic {
-      margin-top: 9em;
+      margin-top: 12em;
       position: relative;
       left: 35%;
-      width: 50%;
-      height: 50%;
       animation-name: animation_drop;
       animation-duration: 1.5s;
       animation-fill-mode: forwards;
       img {
         border-radius: 50%;
         box-shadow: 2px 2px 5px #888888;
+        width: 25%;
+        height: 25%;
       }
     }
 
     #about_me {
-      padding: 1em 2em 1em 2em;
+      padding: 10em 2em -3em 2em;
 
       h1 {
         text-align: center;
@@ -205,6 +206,10 @@ body {
     padding: 0em 2em 2em 2em;
     margin: 2em;
     box-shadow: 3px 3px 10px #888888;
+    position: relative;
+    animation-name: animation_left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 
     h3 {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
@@ -232,10 +237,14 @@ body {
   }
 
   .skills_card_right {
+    position: relative;
     border: 1px solid black;
     padding: 0em 2em 2em 2em;
     margin: 2em;
     box-shadow: 3px 3px 10px #888888;
+    animation-name: animation_right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 
     h3 {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
@@ -451,5 +460,16 @@ body {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes anim1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

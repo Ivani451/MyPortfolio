@@ -125,28 +125,34 @@ body {
     animation: gradient 15s ease infinite; }
     .main .section_title span {
       margin-left: 1em; }
-  .main #about_me_section #header_pic {
-    margin-top: 9em;
-    position: relative;
-    left: 35%;
-    width: 50%;
-    height: 50%;
-    animation-name: animation_drop;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards; }
-    .main #about_me_section #header_pic img {
-      border-radius: 50%;
-      box-shadow: 2px 2px 5px #888888; }
-  .main #about_me_section #about_me {
-    padding: 1em 2em 1em 2em; }
-    .main #about_me_section #about_me h1 {
-      text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .main #about_me_section {
+    height: 80vh; }
+    .main #about_me_section #header_pic {
+      margin-top: 12em;
+      position: relative;
+      left: 35%;
+      animation-name: animation_drop;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards; }
+      .main #about_me_section #header_pic img {
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px #888888;
+        width: 25%;
+        height: 25%; }
+    .main #about_me_section #about_me {
+      padding: 10em 2em -3em 2em; }
+      .main #about_me_section #about_me h1 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
   .main .skills_card_left {
     border: 1px solid black;
     padding: 0em 2em 2em 2em;
     margin: 2em;
-    box-shadow: 3px 3px 10px #888888; }
+    box-shadow: 3px 3px 10px #888888;
+    position: relative;
+    animation-name: animation_left;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; }
     .main .skills_card_left h3 {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
       font-size: 2em;
@@ -164,10 +170,14 @@ body {
         justify-content: center;
         font-size: 80%; }
   .main .skills_card_right {
+    position: relative;
     border: 1px solid black;
     padding: 0em 2em 2em 2em;
     margin: 2em;
-    box-shadow: 3px 3px 10px #888888; }
+    box-shadow: 3px 3px 10px #888888;
+    animation-name: animation_right;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; }
     .main .skills_card_right h3 {
       font-family: "Lucida Sans", "Lucida Sans Regular", "Verdana";
       font-size: 2em;
@@ -308,3 +318,11 @@ body {
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
+
+@keyframes anim1 {
+  from {
+    transform: translateX(-100px);
+    opacity: 0; }
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
