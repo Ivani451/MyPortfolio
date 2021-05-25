@@ -166,14 +166,7 @@ body {
     opacity: 50%;
     font-size: 3em;
     color: rgb(235, 235, 235);
-    background: linear-gradient(
-      -45deg,
-      #fa744b,
-      #e43176,
-      #9c33a0,
-      #1599c9,
-      #10c097
-    );
+    background-color:rgb(10, 108, 146);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     span {
@@ -475,17 +468,7 @@ body {
   }
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 @keyframes anim1 {
   from {
